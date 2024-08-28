@@ -20,23 +20,28 @@
   }
 }
 .phone-number{
-  font-family: 'Inter', sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 2px;
-  position: absolute;
-  top: 25%;
-  right: 100%;
-  margin-right: 5px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  white-space: nowrap;
-  text-decoration: none;
-  color: $main-text-color;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 25%;
+    right: 100%;
+    margin-right: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+    text-decoration: none;
+    color: $main-text-color;
+
+    @include onDesktop {
+      .icon--phone:hover & {
+      opacity: 1;
+    }
+  }
 }
 
-.icon--phone:hover .phone-number {
-  opacity: 1;
-}
+
+
 

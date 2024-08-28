@@ -68,6 +68,7 @@
   font-weight: 700;
   font-family: 'Space Grotesk', sans-serif;
   text-decoration: none;
+  outline: none;
   transition: 0.2s;
   &:hover {
     background-color: #f8f8fa;
@@ -78,8 +79,5 @@
     background-color: $main-text-color;
     color: #fff;
     border: 2px solid $main-text-color;
-  }
-  @include onDesktop {
-    width: 324px;
   }
 }

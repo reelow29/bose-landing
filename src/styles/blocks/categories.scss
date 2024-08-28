@@ -55,6 +55,9 @@
   }
   &__button {
     @include button;
+    @include onDesktop {
+      width: 324px;
+    }
   }
   &__bg-photo {
     height: 460px;

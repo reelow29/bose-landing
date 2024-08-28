@@ -19,16 +19,24 @@
     @include hover(transform, scale(1.2));
   }
 }
-.phone-number {
-  display: block;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #333;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 4px;
-  white-space: nowrap;
+.phone-number{
+  font-family: 'Inter', sans-serif;
   font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 25%;
+  right: 100%;
+  margin-right: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+  text-decoration: none;
+  color: $main-text-color;
 }
+
+.icon--phone:hover .phone-number {
+  opacity: 1;
+}
+

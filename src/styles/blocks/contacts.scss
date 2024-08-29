@@ -24,7 +24,63 @@
   }
   &__button {
     @include button;
+    width: 100%;
     margin-top: 16px;
+  }
+
+  &__input {
+    box-sizing: border-box;
+    background-color: #f8f8fa;
+    height: 48px;
+    border: 1px solid #f8f8fa;
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 16px;
+    cursor: pointer;
+    padding-left: 16px;
+    outline: none;
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 14px;
+      color: #7e7e83;
+      font-family: 'Space Mono', sans-serif;
+      padding: 14px 0;
+    }
+    &:hover {
+      border: 1px solid #d5d7de;
+
+      &::placeholder {
+        color: $main-text-color;
+      }
+    }
+
+    &:focus {
+      border: 1px solid $main-text-color;
+      padding-left: 15px;
+
+      &::placeholder {
+        color: transparent;
+      }
+    }
+    &-textarea {
+      height: 148px !important;
+      width: 100% !important;
+      outline: none;
+      resize: none;
+      padding-left: 16px;
+
+      &:focus {
+        border: 1px solid $main-text-color;
+        padding-left: 15px;
+        padding-top: 16px;
+
+
+        &::placeholder {
+          color: transparent;
+        }
+      }
+    }
   }
 
   &__cont {
@@ -68,59 +124,6 @@
       font-size: 16px;
       line-height: 22.4px;
       margin-top: 8px;
-    }
-  }
-  &__input {
-    background-color: #f8f8fa;
-    height: 48px;
-    border: 1px solid #f8f8fa;
-    border-radius: 8px;
-    width: 100%;
-    margin-bottom: 16px;
-    cursor: pointer;
-    padding-left: 16px;
-
-    &::placeholder {
-      font-weight: 400;
-      font-size: 14px;
-      color: #7e7e83;
-      font-family: 'Space Mono', sans-serif;
-      padding: 14px 0;
-    }
-    &:hover {
-      border: 1px solid #d5d7de;
-
-      &::placeholder {
-        color: $main-text-color;
-      }
-    }
-
-    &:focus {
-      border: 1px solid $main-text-color;
-      padding-left: 15px;
-
-      &::placeholder {
-        color: transparent;
-      }
-    }
-    &-textarea {
-      height: 148px !important;
-      width: 100% !important;
-      outline: none;
-      resize: none;
-      padding-left: 16px;
-
-
-      &:focus {
-        border: 1px solid $main-text-color;
-        padding-left: 15px;
-        padding-top: 16px;
-
-
-        &::placeholder {
-          color: transparent;
-        }
-      }
     }
   }
 }
